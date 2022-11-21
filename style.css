@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-footer{
+    width: 15vw;
+    border-radius: 15%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegation {
+    width: 50vw;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+}
+
+.item-list {
+    width: 100%;
+    list-style: none;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+ 
+/* Para watch  - (max-width: 200px) */
+
+@media (max-width: 200px)  {
+    footer, .list {
+        display: flex;
+        flex-direction: column;
+        background-color: blue;
+        color: white;
+        text-align: center;
+
+    }
+
+    .logo-footer {
+        width: 50vw;
+    }
+}
+
+/* Para mobile  - (min-width: 201px) and (max-width 500px) */
+
+@media (min-width: 201px ) and (max-width: 500px) {
+    footer, .list {
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+        color: red;
+        text-align: center;
+        font-size: 3rem;
+
+    }
+
+    .logo-footer {
+        width: 50vw;
+    }
+}
